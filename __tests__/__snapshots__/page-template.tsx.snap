@@ -1,0 +1,437 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTemplate should match failed request path 1`] = `
+<div>
+  <main
+    class="mx-4 my-4 p-2 pb-5 grow grid bg-base rel rounded"
+  >
+    <h1
+      class="fs-2 text-center fg-primary leading-none mb-1 cols-12"
+    >
+      NexTrip: Metro Transit
+    </h1>
+    <h2
+      class="fs-1.5 text-center mb-2 fg-secondary leading-none border-b cols-12 mx-auto"
+    >
+      Explore Minnesota
+      <i
+        class="block ml-.25 italic fs-1 fg-accent-primary"
+      >
+        Without Worrying About the Traffic
+      </i>
+    </h2>
+    <div
+      class="cols-12 flex flex-col mx-auto"
+    >
+      <label
+        class="mb-.5 bold text-center"
+        for="routes"
+      >
+        Choose a bus route:
+      </label>
+      <select
+        class="shimmer"
+        id="routes"
+        name="routes"
+      />
+      <label
+        class="mb-.5 bold text-center"
+        for="directions"
+      >
+        Choose a direction:
+      </label>
+      <select
+        class="shimmer"
+        id="directions"
+        name="directions"
+      />
+    </div>
+    <a
+      aria-label="Learn more about MetroTransit NexTrip"
+      class="pointer abs t-.25 r-.75 h-2 w-4 shimmer"
+      href="https://www.metrotransit.org/nextrip"
+    />
+  </main>
+</div>
+`;
+
+exports[`PageTemplate should match loading 1`] = `
+<div>
+  <main
+    class="mx-4 my-4 p-2 pb-5 grow grid bg-base rel rounded"
+  >
+    <h1
+      class="fs-2 text-center fg-primary leading-none mb-1 cols-12"
+    >
+      NexTrip: Metro Transit
+    </h1>
+    <h2
+      class="fs-1.5 text-center mb-2 fg-secondary leading-none border-b cols-12 mx-auto"
+    >
+      Explore Minnesota
+      <i
+        class="block ml-.25 italic fs-1 fg-accent-primary"
+      >
+        Without Worrying About the Traffic
+      </i>
+    </h2>
+    <div
+      class="cols-12 flex flex-col mx-auto"
+    >
+      <label
+        class="mb-.5 bold text-center"
+        for="routes"
+      >
+        Choose a bus route:
+      </label>
+      <select
+        class="shimmer"
+        id="routes"
+        name="routes"
+      />
+      <label
+        class="mb-.5 bold text-center"
+        for="directions"
+      >
+        Choose a direction:
+      </label>
+      <select
+        class="shimmer"
+        id="directions"
+        name="directions"
+      />
+    </div>
+    <a
+      aria-label="Learn more about MetroTransit NexTrip"
+      class="pointer abs t-.25 r-.75 h-2 w-4 shimmer"
+      href="https://www.metrotransit.org/nextrip"
+    />
+  </main>
+</div>
+`;
+
+exports[`PageTemplate successful request should match 1`] = `
+<div>
+  <main
+    class="mx-4 my-4 p-2 pb-5 grow grid bg-base rel rounded"
+  >
+    <h1
+      class="fs-2 text-center fg-primary leading-none mb-1 cols-12"
+    >
+      NexTrip: Metro Transit
+    </h1>
+    <h2
+      class="fs-1.5 text-center mb-2 fg-secondary leading-none border-b cols-12 mx-auto"
+    >
+      Explore Minnesota
+      <i
+        class="block ml-.25 italic fs-1 fg-accent-primary"
+      >
+        Without Worrying About the Traffic
+      </i>
+    </h2>
+    <div
+      class="cols-12 flex flex-col mx-auto"
+    >
+      <label
+        class="mb-.5 bold text-center"
+        for="routes"
+      >
+        Choose a bus route:
+      </label>
+      <select
+        class="fs-1 mb-1"
+        id="routes"
+        name="routes"
+      >
+        <option
+          value=""
+        >
+          Select an available route
+        </option>
+        <option
+          value="901"
+        >
+          METRO Blue Line
+        </option>
+      </select>
+      <label
+        class="mb-.5 bold text-center"
+        for="directions"
+      >
+        Choose a direction:
+      </label>
+      <select
+        class="fs-1 mb-1"
+        disabled=""
+        id="directions"
+        name="directions"
+      >
+        <option
+          value=""
+        >
+          Select a direction
+        </option>
+      </select>
+    </div>
+    <div
+      class="cols-12"
+    />
+    <a
+      aria-label="Learn more about MetroTransit NexTrip"
+      class="pointer abs t-.25 r-.75"
+      href="https://www.metrotransit.org/nextrip"
+    >
+      <span
+        style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2764%27%20height=%2732%27/%3e"
+            style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+          />
+        </span>
+        <img
+          alt="MN Logo"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+    </a>
+  </main>
+</div>
+`;
+
+exports[`PageTemplate successful request should match with all props 1`] = `
+<div>
+  <main
+    class="mx-4 my-4 p-2 pb-5 grow grid bg-base rel rounded"
+  >
+    <h1
+      class="fs-2 text-center fg-primary leading-none mb-1 cols-12"
+    >
+      NexTrip: Metro Transit
+    </h1>
+    <h2
+      class="fs-1.5 text-center mb-2 fg-secondary leading-none border-b cols-12 mx-auto"
+    >
+      Explore Minnesota
+      <i
+        class="block ml-.25 italic fs-1 fg-accent-primary"
+      >
+        Without Worrying About the Traffic
+      </i>
+    </h2>
+    <div
+      class="cols-12 flex flex-col mx-auto"
+    >
+      <label
+        class="mb-.5 bold text-center"
+        for="routes"
+      >
+        Choose a bus route:
+      </label>
+      <select
+        class="fs-1 mb-1"
+        id="routes"
+        name="routes"
+      >
+        <option
+          value=""
+        >
+          Select an available route
+        </option>
+        <option
+          value="901"
+        >
+          METRO Blue Line
+        </option>
+      </select>
+      <label
+        class="mb-.5 bold text-center"
+        for="directions"
+      >
+        Choose a direction:
+      </label>
+      <select
+        class="fs-1 mb-1"
+        id="directions"
+        name="directions"
+      >
+        <option
+          value=""
+        >
+          Select a direction
+        </option>
+        <option
+          value="0"
+        >
+          Northbound
+        </option>
+        <option
+          value="1"
+        >
+          Southbound
+        </option>
+      </select>
+    </div>
+    <div
+      class="cols-12"
+    >
+      <div>
+        My child
+      </div>
+    </div>
+    <a
+      aria-label="Learn more about MetroTransit NexTrip"
+      class="pointer abs t-.25 r-.75"
+      href="https://www.metrotransit.org/nextrip"
+    >
+      <span
+        style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2764%27%20height=%2732%27/%3e"
+            style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+          />
+        </span>
+        <img
+          alt="MN Logo"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+    </a>
+  </main>
+</div>
+`;
+
+exports[`PageTemplate successful request should match with route data 1`] = `
+<div>
+  <main
+    class="mx-4 my-4 p-2 pb-5 grow grid bg-base rel rounded"
+  >
+    <h1
+      class="fs-2 text-center fg-primary leading-none mb-1 cols-12"
+    >
+      NexTrip: Metro Transit
+    </h1>
+    <h2
+      class="fs-1.5 text-center mb-2 fg-secondary leading-none border-b cols-12 mx-auto"
+    >
+      Explore Minnesota
+      <i
+        class="block ml-.25 italic fs-1 fg-accent-primary"
+      >
+        Without Worrying About the Traffic
+      </i>
+    </h2>
+    <div
+      class="cols-12 flex flex-col mx-auto"
+    >
+      <label
+        class="mb-.5 bold text-center"
+        for="routes"
+      >
+        Choose a bus route:
+      </label>
+      <select
+        class="fs-1 mb-1"
+        id="routes"
+        name="routes"
+      >
+        <option
+          value=""
+        >
+          Select an available route
+        </option>
+        <option
+          selected=""
+          value="901"
+        >
+          METRO Blue Line
+        </option>
+        <option
+          value="902"
+        >
+          METRO Green Line
+        </option>
+        <option
+          value="906"
+        >
+          Airport Shuttle
+        </option>
+        <option
+          value="903"
+        >
+          METRO Red Line
+        </option>
+      </select>
+      <label
+        class="mb-.5 bold text-center"
+        for="directions"
+      >
+        Choose a direction:
+      </label>
+      <select
+        class="fs-1 mb-1"
+        disabled=""
+        id="directions"
+        name="directions"
+      >
+        <option
+          value=""
+        >
+          Select a direction
+        </option>
+      </select>
+    </div>
+    <div
+      class="cols-12"
+    />
+    <a
+      aria-label="Learn more about MetroTransit NexTrip"
+      class="pointer abs t-.25 r-.75"
+      href="https://www.metrotransit.org/nextrip"
+    >
+      <span
+        style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+      >
+        <span
+          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2764%27%20height=%2732%27/%3e"
+            style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+          />
+        </span>
+        <img
+          alt="MN Logo"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+        <noscript />
+      </span>
+    </a>
+  </main>
+</div>
+`;

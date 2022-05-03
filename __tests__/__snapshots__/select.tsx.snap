@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select should match fully configured 1`] = `
+<div>
+  <label
+    class="mb-.5 bold text-center"
+    for="foo"
+  >
+    bar
+  </label>
+  <select
+    class="fs-1 mb-1"
+    data-x="my_data"
+    id="foo"
+    name="my_name"
+  >
+    <option>
+      floobar
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Select should match minimum config 1`] = `
+<div>
+  <label
+    class="mb-.5 bold text-center"
+    for="foo"
+  >
+    bar
+  </label>
+  <select
+    class="fs-1 mb-1"
+    id="foo"
+    name="foo"
+  />
+</div>
+`;

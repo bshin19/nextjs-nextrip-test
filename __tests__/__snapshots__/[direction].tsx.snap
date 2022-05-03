@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stops should match minimum config 1`] = `
+<div>
+  <h3
+    class="text-center fg-secondary"
+  >
+    Stops along route:
+  </h3>
+  <ul
+    class="grid flex-wrap gap-1 list-none grid-implicit-rows-even break-word hyphens"
+  />
+</div>
+`;
+
+exports[`Stops should match with stops 1`] = `
+<div>
+  <h3
+    class="text-center fg-secondary"
+  >
+    Stops along route:
+  </h3>
+  <ul
+    class="grid flex-wrap gap-1 list-none grid-implicit-rows-even break-word hyphens"
+  >
+    <li
+      class="bg-primary fg-inverse border p-.25 cols-4 cols-md-2 rounded flex align-center"
+    >
+      <div
+        class="fs-1 fs-md-2"
+      >
+        🚏
+      </div>
+      <span>
+        1
+        . 
+        MN State Capitol
+      </span>
+    </li>
+    <li
+      class="bg-primary fg-inverse border p-.25 cols-4 cols-md-2 rounded flex align-center"
+    >
+      <div
+        class="fs-1 fs-md-2"
+      >
+        🚏
+      </div>
+      <span>
+        2
+        . 
+        Mall of America
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`getServerSideProps should return the appropriate props 1`] = `
+Object {
+  "props": Object {
+    "directions": Array [
+      Object {
+        "direction_id": "0",
+        "direction_name": "Northbound",
+      },
+      Object {
+        "direction_id": "1",
+        "direction_name": "Southbound",
+      },
+    ],
+    "stops": Array [
+      Object {
+        "description": "Minnetonka",
+        "place_code": "122",
+      },
+      Object {
+        "description": "MN Zoo",
+        "place_code": "101",
+      },
+    ],
+  },
+}
+`;
