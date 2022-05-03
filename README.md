@@ -1,14 +1,36 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## TODO Ensure these are documented
+## Assumptions
 
-1. The steps to build and run your application.
-2. The steps to execute provided tests.
-3. A list of assumptions you made during development.
-4. To submit your application, you may either email a zip archive of your project or provide remote
-5. access to your project repository
+1. Select a bus route from a list of available routes
+
+- this is static, we can build time this
+
+2. Select a direction for a bus route
+
+- this is optimally static, we can build time this
+- Build Limitation: directions are always 0 and 1, but 0 can be North or East, and 1 can be South or West.
+  - For the purposes of performance, we're going to skip getting pretty-text on directions for each and merge as North/East and South/West
+  - Recanting on this, we may as well fetch these at runtime on the client-side given the below. Then we can make the directions more clear.
+
+3. For a given route and direction, display the stops
+  - This is variable and will need to be fetched at runtime
+
+4. Respond reasonably to browser back and forward buttons (for example, implement application routing)
+  - To achieve this, I focused mostly on the page template and created an app shell with the core logic. Most of the pages simply request data and forward it through to the template.
+
+- The "Show My Bus" mapping feature is not expected
+
 
 ## Getting Started
+
+After cloning, make sure the packages are installed
+
+```bash
+npm i
+# or
+yarn
+```
 
 First, run the development server:
 
@@ -20,11 +42,21 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Testing
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm test
+# or
+yarn test
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Building
+
+```bash
+npm run build
+# or
+yarn build
+```
 
 ## Learn More
 
