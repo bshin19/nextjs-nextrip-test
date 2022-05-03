@@ -19,7 +19,7 @@ const Stops: NextPage<NexTripStops> = (props) => {
         {stops?.map(({ place_code, description }, i) => (
           <li
             key={place_code}
-            className="bg-primary fg-inverse border p-.25 cols-4 cols-md-2 rounded flex align-center"
+            className="bg-primary fg-inverse border p-.25 cols-12 cols-sm-6 cols-md-4 rounded flex align-center"
           >
             <div className="fs-1 fs-md-2">{"🚏"}</div>
             <span>
@@ -38,15 +38,19 @@ const Stops: NextPage<NexTripStops> = (props) => {
  * `stops does as well, but is only used for the StopsComponent, currently
  */
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { params } = context;
+  const { params = {} } = context;
+
+  const { route, direction } = params
+
+  if (route === undefined || direction === undefined) return { props: { } };
 
   // Call the metrotransit api for our needed data
   // Given more time I'd figure out a way to skip this extra requests
   const res = await fetch(
-    `https://svc.metrotransittest.org/nextripv2/stops/${params?.route}/${params?.direction}`
+    `https://svc.metrotransittest.org/nextripv2/stops/${route}/${direction}`
   );
   const directionsRes = await fetch(
-    `https://svc.metrotransittest.org/nextripv2/directions/${params?.route}`
+    `https://svc.metrotransittest.org/nextripv2/directions/${route}`
   );
 
   const directions = await directionsRes.json();

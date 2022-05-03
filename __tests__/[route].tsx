@@ -9,8 +9,13 @@ describe("Route", () => {
 });
 
 describe("getServerSideProps", () => {
-  const context = { params: { route: 100 } };
   it("should return the appropriate props", async () => {
+    const context = { params: { route: 100 } };
     expect(await getServerSideProps(context as any)).toMatchSnapshot();
   });
+
+  it('should return empty object without correct props', async () => {
+    const context = { };
+    expect(await getServerSideProps(context as any)).toMatchSnapshot();
+  })
 });

@@ -18,9 +18,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 4. Respond reasonably to browser back and forward buttons (for example, implement application routing)
   - To achieve this, I focused mostly on the page template and created an app shell with the core logic. Most of the pages simply request data and forward it through to the template.
-
-- The "Show My Bus" mapping feature is not expected
-
+  - in a similar responsive vein, this was developed small-view first. Necessary utility styles for breakpoints were added to scale up.
 
 ## Getting Started
 
@@ -50,6 +48,11 @@ npm test
 yarn test
 ```
 
+* Complete coverage was pursued.
+* Given more time, integration and visual regression tests would be pursued using libraries such as Cypress and/or Backstop.
+
+![code coverage](/docs/code-coverage.png)
+
 ## Building
 
 ```bash
@@ -57,6 +60,23 @@ npm run build
 # or
 yarn build
 ```
+
+## Snaps
+
+**Loading**
+![base](/docs/loading.png)
+
+**Base**
+![base](/docs/base.png)
+
+**Small**
+![base](/docs/res-sm.png)
+
+**Medium**
+![base](/docs/res-md.png)
+
+**Large**
+![base](/docs/res-lg.png)
 
 ## Learn More
 

@@ -7,11 +7,15 @@ const Route: NextPage = () => null;
 
 // This gets called on every request
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { params } = context;
+  const { params = {} } = context;
+  const { route } = params
+
+  // Escape and don't fetch without a value
+  if (route === undefined) return { props: {} }
 
   // Fetch data from external API
   const res = await fetch(
-    `https://svc.metrotransittest.org/nextripv2/directions/${params?.route}`
+    `https://svc.metrotransittest.org/nextripv2/directions/${route}`
   );
 
   const directions = await res.json();

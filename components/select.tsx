@@ -6,7 +6,7 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
 }
 
 export default function Select(props: SelectProps) {
-  const { id, children, description, onChange, ...otherProps } = props;
+  const { id, className, children, description, onChange, ...otherProps } = props;
 
   return (
     <>
@@ -14,7 +14,8 @@ export default function Select(props: SelectProps) {
         {description}
       </label>
       <select
-        className="fs-1 mb-1"
+        // I don't like the extra space here. Didn't want to add another library or add the functionality for this singular instance
+        className={"fs-1 mb-1 " + className}
         id={id}
         name={id}
         onChange={onChange}

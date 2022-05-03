@@ -29,13 +29,13 @@ interface PageTemplateProps
   children?: React.ReactNode;
 }
 
+export const fetcher = async (args: any) => {
+  const res = await fetch(args)
+  return res.json()
+}
+
 export default function PageTemplate(props: PageTemplateProps) {
   const { children, directions } = props;
-
-  const fetcher = (args: any) =>
-    fetch(args).then((res) => {
-      return res.json();
-    });
 
   const { data, error } = useSWR(
     "https://svc.metrotransittest.org/nextripv2/routes",
@@ -56,9 +56,11 @@ export default function PageTemplate(props: PageTemplateProps) {
   const routes: Array<NexTripRoute> = data;
 
   if (error) return <div>failed to load</div>;
+
+  // Loading fallback
   if (!routes)
     return (
-      <main className="mx-4 my-4 p-2 pb-5 grow grid bg-base rel rounded">
+      <main className="m-1 m-sm-2 m-md-4 p-2 pb-5 grow grid bg-base rel rounded">
         <h1 className="fs-2 text-center fg-primary leading-none mb-1 cols-12">
           NexTrip: Metro Transit
         </h1>
@@ -101,7 +103,7 @@ export default function PageTemplate(props: PageTemplateProps) {
         <title>NexTrip in NextJs Demo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="mx-4 my-4 p-2 pb-5 grow grid bg-base rel rounded">
+      <main className="m-1 m-sm-2 m-md-4 p-2 pb-5 grow grid bg-base rel rounded">
         <h1 className="fs-2 text-center fg-primary leading-none mb-1 cols-12">
           NexTrip: Metro Transit
         </h1>
@@ -118,7 +120,7 @@ export default function PageTemplate(props: PageTemplateProps) {
             defaultValue={route}
           >
             <option value="">Select an available route</option>
-            {routes?.map(({ route_id, route_label }) => (
+            {routes.length && routes.map(({ route_id, route_label }) => (
               <option key={route_id} value={route_id}>
                 {route_label}
               </option>

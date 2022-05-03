@@ -2,6 +2,12 @@
 
 exports[`Route should match default 1`] = `<div />`;
 
+exports[`getServerSideProps should return empty object without correct props 1`] = `
+Object {
+  "props": Object {},
+}
+`;
+
 exports[`getServerSideProps should return the appropriate props 1`] = `
 Object {
   "props": Object {

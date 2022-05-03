@@ -55,6 +55,24 @@ exports[`Stops should match with stops 1`] = `
 </div>
 `;
 
+exports[`getServerSideProps should return empty object with empty params 1`] = `
+Object {
+  "props": Object {},
+}
+`;
+
+exports[`getServerSideProps should return empty object without direction 1`] = `
+Object {
+  "props": Object {},
+}
+`;
+
+exports[`getServerSideProps should return empty object without route 1`] = `
+Object {
+  "props": Object {},
+}
+`;
+
 exports[`getServerSideProps should return the appropriate props 1`] = `
 Object {
   "props": Object {
